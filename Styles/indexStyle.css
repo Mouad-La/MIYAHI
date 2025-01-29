@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    border: 1px solid black;
+}
+
+.name-icon {
+    display: flex;
+    height: 40px;
+    width: 12%;
+    align-items: center;
+    /*justify-content: space-between;*/
+    gap: 10px;
+}
+
+.name {
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    color: rgb(97, 97, 255);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    max-width: 40px;
+    height: auto;
+}
+
+.navbar-right-elements {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.navbar-right-elements > h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.navbar-right-elements > h3:hover {
+    /*border-bottom: 2px blue solid;*/
+    text-decoration: underline blue 2px;
+    color: blue;
+}
+
