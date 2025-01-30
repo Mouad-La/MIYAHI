@@ -7,7 +7,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px;
-    border: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 .name-icon {
@@ -42,14 +42,31 @@ a {
 }
 
 .navbar-right-elements > h3 {
+    position: relative;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
+    color: black;
+    transition: color 0.3s ease;
     margin: 0;
 }
 
+.navbar-right-elements > h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s ease;
+}
+
 .navbar-right-elements > h3:hover {
-    /*border-bottom: 2px blue solid;*/
-    text-decoration: underline blue 2px;
     color: blue;
+}
+
+.navbar-right-elements > h3:hover::after {
+    /*border-bottom: 2px blue solid;*/
+    width: 100%;
 }
 
