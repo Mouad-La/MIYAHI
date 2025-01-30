@@ -37,8 +37,9 @@ a {
 
 .navbar-right-elements {
     display: flex;
-    width: 30%;
+    width: 50%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-right-elements > h3 {
@@ -68,5 +69,38 @@ a {
 .navbar-right-elements > h3:hover::after {
     /*border-bottom: 2px blue solid;*/
     width: 100%;
+}
+
+.login-register-container {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.btn {
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+    border-radius: 13px;
+    padding: 6px 15px;
+}
+
+.login-btn {
+    background-color: lightblue;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn {
+    background-color: lightgreen;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: rgb(153, 196, 255);
+}
+
+.register-btn:hover {
+    background-color: rgb(114, 255, 114);
 }
 
